@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vulnerability testing</title>
+  <script>
+    (() => {
+      console.log("HI"); 
+      window.document.getElementsByTagName("body")[0].style.display = "none";
+      window.alert("You've been had!")
+    })();
+  </script>
+
+</head>
+<body>
+
+<h1>Got ya!</h1>
+<p>Should I be bale to do this?</p>
+
+</body>
+</html>
